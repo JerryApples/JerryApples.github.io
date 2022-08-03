@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Overpass, sans-serif;
+    color: var(--text-color);
+}
+
+.logo {
+    color: var(--h-color);
+    font-size: 2rem;
+}
+
+:root {
+    --primary-color: #ff7a01;
+    --text-color: #7d919f;
+    --h-color: white;
+
+    --bg-color-1: #001925;
+    --bg-color-2: #022731;
+
+    --fs-1: 3.4rem;
+    --fs-2: 3.3rem;
+    --fs-3: 2rem;
+    --fs-4: 1.2rem;
+
+    --fw-1: 600;
+    --fw-2: 400;
+
+    --page-width: 90%;
+}
+
+h1 {
+    font-size: var(--fs-1);
+    line-height: 1em;
+    color: var(--h-color);
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: var(--fs-2);
+    line-height: 1em;
+    margin-bottom: 2rem;
+    padding-top: 1em;
+}
+
+h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: var(--fs-3);
+}
+
+p {
+    font-size: var(--fs-4);
+    line-height: 1.5em;
+}
+
+header {
+    background-color: var(--bg-color-1);
+}
+
+.xryst-header-container {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xryst-nav {
+    display: none;
+}
+
+#menu-menu {
+    display: none;
+}
+
+.popup-menu-button {
+    font-size: var(--fs-3);
+    height: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.popup-menu-button ion-icon {
+    color: white;
+}
+
+#menu-menu:checked ~ .popup-menu {
+    display: flex;
+}
+
+.popup-menu {
+    display: none;
+    flex-direction: column;
+    font-size: -var(--fs-3);
+    text-align: right;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    padding-bottom: 1em;
+    gap: 1em;
+}
+
+.popup-menu a {
+    padding: 1em;
+    margin-left: 5rem;
+}
+
+.popup-menu a:active {
+    background-color: #032738;
+    border-radius: 50px;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.xryst-hero {
+    padding-top: 2rem;
+    background-color: var(--bg-color-1);
+}
+
+.hero-layout img {
+    display: none;
+}
+
+.hero-layout {
+    padding: 2rem
+}
+
+.xryst-hero {
+    background-image: url(images/hero-img.jpg);
+    background-size: cover;
+}
+
+.title-and-intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.title-and-intro p {
+    color: rgb(238, 238, 238);
+}
+
+.xryst-about {
+    background-color: var(--bg-color-2);
+}
+
+.about-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+.xryst-gallery {
+    background-color: var(--bg-color-1);
+    display: flex;
+    flex-direction: column;
+}
+
+.xryst-gallery h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    display: grid;
+    margin-bottom: 1em;
+}
+
+.gallery-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    overflow: scroll;
+    height: 35rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-layout img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.xryst-footer {
+    background-color: var(--bg-color-2);
+}
+
+.footer-content {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.totop {
+    font-size: 2.8rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totop a {
+    height: 1em;
+    padding-bottom: 5px;
+}
+
+.totop ion-icon {
+    color: white;
+}
+
+.socials {
+    display: none;
+}
+
+.socials-menu { 
+    padding-top: 2em;
+    display: flex; 
+    background-color: var(--bg-color-1);
+    gap: 1rem; 
+    margin: 0;
+    border: none;
+    justify-content: center;
+    padding-bottom: 2em;
+} 
+
+.socials-menu ion-icon {
+    color: white;
+}
+
+.socials-menu > * { 
+    border: 2px solid white; 
+    height: var(--fs-3); 
+    font-size: var(--fs-3); 
+    padding: 0.5rem; 
+    border-radius: 50%; 
+} 
+
+.socials-menu :is(.fb, .linkedin, .skype):hover { 
+    background-color: rgb(92, 92, 252); 
+} 
+
+.git:hover { 
+    background-color: black; 
+} 
+
+.insta:hover { 
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+}
+
+.xryst-footer strong {
+    color: white;
+}
+
+.made-by {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0 1em 0;
+    background-color: var(--bg-color-1);
+    width: 100%;
+}
+
+@media (min-width: 550px) {
+    :root {
+        --fs-1: 5rem;
+    }
+
+    .about-layout img {
+        height: 25rem;
+        width: 20rem;
+    }
+
+    .about-layout {
+        flex-direction: row;
+    }
+
+    .about-layout h2 {
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 760px) {
+    :root {
+        --fs-1: 5.5rem;
+    }
+}
+
+@media (min-width: 880px) {
+    .about-layout {
+        flex-direction: row;
+        flex-flow: row-reverse;
+        text-align: right;
+        padding-top: 4rem;
+    }
+
+    .about-layout img {
+        height: 35rem;
+        width: 29rem;
+    }
+}
+
+@media (min-width: 1350px) {
+    :root {
+        --page-width: 1350px;
+    }
+
+    .title-and-intro p {
+        color: var(--text-color);
+    }
+
+    .about-layout,
+    .gallery-layout,
+    .xryst-header-container,
+    .footer-content {
+        width: var(--page-width);
+        margin: 0 auto;
+    }
+
+    .totop {
+        right: calc(50vw - 675px)
+    }
+
+    .hero-layout img {
+        display: block;
+        width: fit-content;
+        margin-bottom: 5rem;
+    }
+
+    .xryst-hero {
+        background-image: none;
+        overflow: hidden;
+    }
+
+    .hero-layout {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        width: var(--page-width);
+        margin: 0 auto;
+    }
+
+    .title-and-intro {
+        display: inline-block;
+    }
+
+    .popup-menu-button, .popup-menu {
+        display: none;
+    }
+
+    .xryst-nav {
+        display: flex;
+        gap: 5rem;
+        margin-right: 2rem;
+        align-items: center;
+    }
+
+
+}
