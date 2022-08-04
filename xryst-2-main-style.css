@@ -174,7 +174,7 @@ img {
     justify-content: center;
     margin-top: 2rem;
     gap: 1rem;
-    overflow: none;
+    overflow: hidden;
     height: 35rem;
     margin-bottom: 3rem;
 }
