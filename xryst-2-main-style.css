@@ -162,9 +162,9 @@ img {
 }
 
 .overlay {
-    width: 10rem;
-    --width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    --width: 8rem;
+    height: 8rem;
     color: var(--primary-color);
     background-color: var(--primary-color);
     position: absolute;
@@ -377,10 +377,6 @@ img {
         right: calc(50vw - 675px);
     }
 
-    .overlay {
-        right: calc(50vw - 600px);
-    }
-
     .hero-layout img {
         display: block;
         width: fit-content;
@@ -449,6 +445,13 @@ img {
     img.rows-cols-2 {
         width: calc(240px * 1.75);
         height: calc(192px * 1.75);
+    }
+
+    .overlay {
+        width: 12rem;
+        --width: 12rem;
+        height: 12rem;
+        right: calc(50vw - 600px);
     }
 }
 
