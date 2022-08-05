@@ -443,11 +443,6 @@ img {
         height: auto;
     }
 
-    img.rows-cols-2 {
-        width: calc(240px * 1.75);
-        height: calc(192px * 1.75);
-    }
-
     .overlay {
         width: 12rem;
         --width: 12rem;
