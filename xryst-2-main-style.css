@@ -457,14 +457,11 @@ img {
 
 @media (max-width: 360px) {
     :root {
-        --fs-1: 2rem;
+        --fs-1: 3rem;
     }
 
     .socials-menu {
         flex-wrap: wrap;
     }
-
-    .overlay ion-icon {
-        font-size: 3rem;
-    }    
+    
 }
