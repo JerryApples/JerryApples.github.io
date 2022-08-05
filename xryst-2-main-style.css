@@ -79,6 +79,10 @@ header {
     display: none;
 }
 
+.xryst-nav a:hover {
+    color: var(--primary-color);
+}
+
 #menu-menu {
     display: none;
 }
