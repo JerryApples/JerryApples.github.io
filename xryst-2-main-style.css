@@ -464,4 +464,7 @@ img {
         flex-wrap: wrap;
     }
 
+    .overlay ion-icon {
+        font-size: 3rem;
+    }    
 }
