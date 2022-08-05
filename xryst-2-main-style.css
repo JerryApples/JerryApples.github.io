@@ -121,6 +121,7 @@ header {
 .popup-menu a:active {
     background-color: #032738;
     border-radius: 50px;
+    color: var(--primary-color);
 }
 
 img {
