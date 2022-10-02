@@ -1,116 +1,468 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Chrystam - Photographer</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="xryst-2-main-style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header id="top">
-            <div class="xryst-header-container" id="nav">
-                <a href="#top" class="logo"><span class="primary-color">CHRY</span><span class="logo-s">S</span>TAM</a>
-                <nav class="xryst-nav">
-                    <a href="#about">About</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#footer">Contact me</a>
-                </nav>
-                <label class="popup-menu-button" for="menu-menu"><ion-icon name="menu"></ion-icon></label>
-            </div>
-            <input type="checkbox" id="menu-menu">
-            <nav class="popup-menu">
-                <a href="#about">About</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#footer">Contact me</a>
-            </nav>
-        </header>
-        <main>
-            <section class="xryst-hero" id="hero">
-                <div class="hero-layout">
-                    <img src="images/hero-img.jpg" alt="Chrystam taking a photo">
-                    <div class="title-and-intro">
-                        <h1><span class="primary-color">Photography</span><br>helps people to see</h1>
-                        <p>From inspiring people's stories to impactful messages, I create head-turning     photograph that does the right thing in the right place, at the right time to   unlock the possibility.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="hero-about-mid-overlay">
-                <div class="overlay">
-                    <ion-icon name="ribbon"></ion-icon>
-                </div>
-            </section>
-            <section class="xryst-about" id="about">
-                <div class="about-layout">
-                    <img src="images/hero-2-img.jpg" alt="Chrystam-standing">
-                    <div class="title-and-about">
-                        <h2>About <span class="primary-color">Chrystam</span></h2>
-                        <p>Photographer and creator based in Athens, Greece. Being perceptive to the small details of the everyday, my work revolves around floating moments and allegorical scenes. Nature, memory, and family are notions that interest me in a symbolic form and their narrative power.</p>
-                        <p>Moreoverm my humanist approach and idealisation of women set me apart from the other photographers, as my privilefes are the soul and the personality.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="xryst-gallery" id="gallery">
-                <h2>Gallery</h2>
-                <div class="center-gallery">
-                    <div class="gallery-layout">
-                        <img class="cols-2" src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img class="rows-2" src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img class="rows-cols-2" src="images/car.jpg">
-                        <img src="">
-                        <img src="">
-                        <img class="rows-2" src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img class="cols-2" src="">
-                    </div>
-                </div>
-            </section>
-            <aside class="socials">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <span class="socials-banner">FOLLOW ME</span>
-            </aside>
-            <aside>
-                <nav class="socials-menu"> 
-                    <a class="fb" href="#"><ion-icon name="logo-facebook"></ion-icon></a> 
-                    <a class="insta" target="_blank" href="#"><ion-icon name="logo-instagram"></ion-icon></a> 
-                    <a class="linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a> 
-                    <a class="git" href="#"><ion-icon name="logo-github"></ion-icon></a> 
-                    <a class="skype" href="#"><ion-icon name="logo-skype"></ion-icon></a> 
-                </nav>
-            </aside>
-            <aside class="totop">
-                <a href="#top"><ion-icon name="chevron-up-outline"></ion-icon></a>
-            </aside>
-        </main>
-        <footer class="xryst-footer" id="footer">
-            <div class="footer-content">
-                <h3>Contact me</h3>
-                <div class="xryst-contact-info">
-                    <p>Feel free to contact me anytime at<br><strong>chrystam@gmail.com ,</strong><br>I am usually available on weekends and that's when I will be responding most of the time</p>
-                </div>
-            </div>
-            <div class="made-by">
-                <span>Made by <strong>Jerry Apples</strong></span>
-            </div>
-        </footer>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Overpass, sans-serif;
+    color: var(--text-color);
+}
+
+.logo {
+    color: var(--h-color);
+    font-size: 2rem;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.logo-s {
+    background: -webkit-linear-gradient(315deg, var(--primary-color) 50%, var(--h-color) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:root {
+    --primary-color: #ff7a01;
+    --text-color: #7d919f;
+    --h-color: white;
+
+    --bg-color-1: #001925;
+    --bg-color-2: #022731;
+
+    --fs-1: 3.4rem;
+    --fs-2: 3.3rem;
+    --fs-3: 2rem;
+    --fs-4: 1.2rem;
+
+    --fw-1: 600;
+    --fw-2: 400;
+
+    --page-width: 90%;
+}
+
+h1 {
+    font-size: var(--fs-1);
+    line-height: 1em;
+    color: var(--h-color);
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: var(--fs-2);
+    line-height: 1em;
+    margin-bottom: 2rem;
+    padding-top: 1em;
+}
+
+h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: var(--fs-3);
+}
+
+p {
+    font-size: var(--fs-4);
+    line-height: 1.5em;
+}
+
+header {
+    background-color: var(--bg-color-1);
+}
+
+.xryst-header-container {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xryst-nav {
+    display: none;
+}
+
+.xryst-nav a:hover {
+    color: var(--primary-color);
+}
+
+#menu-menu {
+    display: none;
+}
+
+.popup-menu-button {
+    font-size: var(--fs-3);
+    height: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.popup-menu-button ion-icon {
+    color: white;
+}
+
+#menu-menu:checked ~ .popup-menu {
+    display: flex;
+}
+
+.popup-menu {
+    display: none;
+    flex-direction: column;
+    font-size: -var(--fs-3);
+    text-align: right;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    padding-bottom: 1em;
+    gap: 1em;
+}
+
+.popup-menu a {
+    padding: 1em;
+    margin-left: 5rem;
+}
+
+.popup-menu a:active {
+    background-color: #032738;
+    border-radius: 50px;
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 4rem 0.5rem rgb(28, 28, 28);
+}
+
+.xryst-hero {
+    padding-top: 2rem;
+    background-color: var(--bg-color-1);
+}
+
+.hero-layout img {
+    display: none;
+}
+
+.hero-layout {
+    padding: 2rem 2rem 12rem;
+}
+
+.xryst-hero {
+    background-image: url(images/hero-img.jpg);
+    background-size: cover;
+}
+
+.title-and-intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.title-and-intro p {
+    color: rgb(238, 238, 238);
+}
+
+.hero-and-about-mid-overlay {
+    width: 100%;
+}
+
+.overlay {
+    width: 8rem;
+    --width: 8rem;
+    height: 8rem;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    position: absolute;
+    transform: translateY(calc(var(--width) / -2));
+    border-radius: 50%;
+    right: calc(50vw - var(--width) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2rem rgb(92, 92, 92);
+}
+
+.overlay ion-icon {
+    font-size: var(--fs-1);
+    color: rgb(29, 28, 28);
+}
+
+.xryst-about {
+    background-color: var(--bg-color-2);
+}
+
+.about-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 2rem;
+    padding-bottom: 4rem;
+    padding-top: 12rem;
+}
+
+.xryst-gallery {
+    background-color: var(--bg-color-1);
+    display: flex;
+    flex-direction: column;
+}
+
+.xryst-gallery h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    display: grid;
+    margin-bottom: 1em;
+}
+
+.gallery-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    overflow: hidden;
+    height: 35rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-layout img {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 0;
+    box-shadow: inset 0 0 1.5rem black;
+}
+
+.xryst-footer {
+    background-color: var(--bg-color-2);
+}
+
+.footer-content {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.totop {
+    font-size: 2.8rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totop a {
+    height: 1em;
+    padding-bottom: 5px;
+}
+
+.totop ion-icon {
+    color: white;
+}
+
+.socials {
+    display: none;
+}
+
+.socials-menu { 
+    padding-top: 2em;
+    display: flex; 
+    background-color: var(--bg-color-1);
+    gap: 1rem; 
+    margin: 0;
+    border: none;
+    justify-content: center;
+    padding-bottom: 2em;
+} 
+
+.socials-menu ion-icon {
+    color: white;
+}
+
+.socials-menu > * { 
+    border: 2px solid white; 
+    height: var(--fs-3); 
+    font-size: var(--fs-3); 
+    padding: 0.5rem; 
+    border-radius: 50%; 
+} 
+
+.socials-menu :is(.fb, .linkedin, .skype):hover { 
+    background-color: rgb(92, 92, 252); 
+} 
+
+.git:hover { 
+    background-color: black; 
+} 
+
+.insta:hover { 
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+}
+
+.xryst-footer strong {
+    color: white;
+}
+
+.made-by {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0 1em 0;
+    background-color: var(--bg-color-1);
+    width: 100%;
+}
+
+@media (min-width: 550px) {
+    :root {
+        --fs-1: 5rem;
+    }
+
+    .about-layout img {
+        height: 25rem;
+        width: 20rem;
+    }
+
+    .about-layout {
+        flex-direction: row;
+    }
+
+    .about-layout h2 {
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 760px) {
+    :root {
+        --fs-1: 5.5rem;
+    }
+}
+
+@media (min-width: 880px) {
+    .about-layout {
+        flex-direction: row;
+        flex-flow: row-reverse;
+        text-align: right;
+    }
+
+    .about-layout img {
+        height: 35rem;
+        width: 29rem;
+    }
+}
+
+@media (min-width: 1350px) {
+    :root {
+        --page-width: 1350px;
+    }
+
+    .title-and-intro p {
+        color: var(--text-color);
+    }
+
+    .about-layout,
+    .gallery-layout,
+    .xryst-header-container,
+    .footer-content {
+        width: var(--page-width);
+        margin: 0 auto;
+    }
+
+    .totop {
+        right: calc(50vw - 675px);
+    }
+
+    .hero-layout img {
+        display: block;
+        width: fit-content;
+    }
+
+    .xryst-hero {
+        background-image: none;
+        overflow: hidden;
+    }
+
+    .hero-layout {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        width: var(--page-width);
+        margin: 0 auto;
+    }
+
+    .title-and-intro {
+        display: inline-block;
+    }
+
+    .popup-menu-button, .popup-menu {
+        display: none;
+    }
+
+    .xryst-nav {
+        display: flex;
+        gap: 5rem;
+        margin-right: 2rem;
+        align-items: center;
+    }
+
+    .xryst-gallery img {
+        background-color: white;
+    }
+
+    .gallery-layout {
+        display: grid;
+        grid-template-columns: repeat(7, 10rem);
+        gap: 1rem;
+        grid-auto-rows: 10rem;
+        height: fit-content;
+        overflow: auto;
+    }
+
+    .rows-2 {
+        grid-row: span 2;
+    }
+
+    .cols-2 {
+        grid-column: span 2;
+    }
+
+    .rows-cols-2 {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .gallery-layout img {
+        border-radius: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    img.rows-cols-2 {
+        width: calc(240px * 1.75);
+        height: calc(192px * 1.75);
+    }
+
+    .overlay {
+        width: 12rem;
+        --width: 12rem;
+        height: 12rem;
+        right: calc(50vw - 600px);
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --fs-1: 3rem;
+    }
+
+    .socials-menu {
+        flex-wrap: wrap;
+    }
+
+}
