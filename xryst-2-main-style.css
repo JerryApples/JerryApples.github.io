@@ -1,1015 +1,116 @@
-html * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Overpass', serif;
-}
-
-html {
-    background-color: rgb(242, 242, 242);
-}
-
-:root {
-    --max-width: 75rem;
-    
-    --bg-clr: white;
-    --text-clr: black;
-    --text-clr-2: white;
-    --main-menu-clr: rgb(216, 216, 216);
-    --card-clr: #d3d3d3;
-    --primary-clr: #199CFF;
-    --secondary-clr: rgb(30, 98, 74);
-    --thirdary-clr: rgb(255, 153, 0);
-
-    --fs-1: 3.5rem;
-    --fs-2: 2.5rem;
-    --fs-3: 2rem;
-    --fs-4: 1.5rem;
-    --fs-5: 1.3rem;
-    --fs-6: 1rem;
-
-    --fw-1: 900;
-    --fw-2: 600;
-    --fw-3: 400;
-    --fw-4: 200;
-}
-
-ion-icon {
-    font-size: var(--fs-3);
-    display: flex;
-    align-items: center;
-}
-
-header {
-    background-color: var(--main-menu-clr);
-}
-
-header a {
-    height: fit-content;
-}
-
-.menu-nav-bar {
-    display: flex;
-    justify-content: space-between;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    font-size: var(--fs-3);
-}
-
-.menu-nav-bar a {
-    padding: 1rem 0.5rem;
-}
-
-.menu {
-    font-size: var(--fs-5);
-    display: flex;
-    align-items: center;
-}
-
-.product-menu {
-    max-width: calc(var(--max-width) - 5rem);
-    font-weight: var(--fw-2);
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-size: var(--fs-5);
-}
-
-a {
-    color: var(--text-clr);
-    text-decoration: none;
-}
-
-.hero {
-    margin: 0 auto;
-    max-width: var(--max-width);
-}
-
-.hero-container {
-    background-color: var(--primary-clr);    
-    color: var(--text-clr-2);
-    border-radius: 5rem;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1em;
-    box-shadow: inset 35px 35px 100px #1585d9 ,
-            inset -35px -35px 100px #1db3ff;
-}
-
-.hero-container > * {
-    margin-left: 3rem;
-}
-
-.hero-container > h1 {
-    font-weight: var(--fw-2);
-    font-size: var(--fs-1);
-}
-
-h3 {
-    font-size: var(--fs-2);
-    font-weight: var(--fw-3);
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.hero-cards {
-    max-width: var(--max-width);
-    display: flex;
-    margin: 3rem auto 0;
-    justify-content: space-between;
-}
-
-.card {
-    background-color: var(--card-clr);
-    width: 22rem;
-    height: 15rem;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.card-content {
-    margin-bottom: 4rem;
-    margin-left: 2rem;
-    display: flex;
-    justify-content: space-between;
-    width: 78%;
-    height: 50%;
-}
-
-.card-content img {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    background-color: rgb(250, 250, 250);
-}
-
-.card h2 {
-    margin-bottom: 2rem;
-}
-
-.products {
-    max-width: var(--max-width);
-    margin: 5rem auto;
-}
-
-.products h2 {
-    font-size: var(--fs-2);
-    margin-bottom: 5rem;
-}
-
-.products-arrangement {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    row-gap: 5rem;
-    justify-content: space-between;
-}
-
-.product-card {
-    width: 23%;
-    height: 27rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 2rem;
-}
-
-.product-card img {
-    height: 22.5rem;
-    border-radius: 3em;
-    background-color: rgb(250, 250, 250);
-}
-
-.price {
-    font-weight: var(--fw-1);
-    font-size: var(--fs-4);
-}
-
-.previous-price {
-    text-decoration: line-through;
-    opacity: 0.7;
-}
-
-.seemore {
-    margin: 0 auto;
-}
-
-.seemoree {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    border: 0;
-    outline: 0;
-    font-size: 18px;
-    background: var(--thirdary-clr);
-    color: #fff;
-    padding: 1em;
-    margin-top: 4rem;
-}
-  
-svg {
-    margin: 0 0 0 10px;
-}
-  
-.seemoree:hover svg {
-    margin: 0 0 0 25px;
-    transition: 0.3s;
-}
-  
-.seemoree:not(:hover) svg {
-    transition: 0.3s;
-}
-  
-.seemoree:active {
-    transform: scale(0.9, 0.9);
-    transition: 200ms;
-}
-  
-.seemoree:not(:active) {
-    transition: 200ms;
-}
-
-.seemore-btn {
-    margin: 0 auto;
-    border-radius: 2rem;
-    height: 2.3em;
-    width: 9em;
-    font-size: var(--fs-4);
-    background-color: var(--thirdary-clr);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-}
-
-.premium-products {
-    background-color: rgb(156, 211, 232);
-    padding-top: 12rem;
-}
-
-.premium-products-center {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.premium-products-description :nth-child(3) {
-    display: flex;
-    align-items: flex-end;
-    color: var(--text-clr-2);
-}
-
-.premium-products-hero h1 {
-    font-size: 6.9rem;
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-}
-
-.premium-products-description {
-    display: flex;
-    justify-content: space-between;
-    height: 8rem;
-}
-
-.premium-products-hero {
-    margin-bottom: 5rem;
-}
-
-.premium-products-center .products-arrangement {
-    width: calc(var(--max-width) - 10rem);
-    margin: 0 auto;
-}
-
-.products-arrangement-container {
-    width: var(--max-width);
-    background-color: rgb(239, 239, 239);
-    border-radius: 1rem;
-    padding-top: 5rem;
-}
-
-.premium-products-center .product-card {
-    width: 30%;
-}
-
-.products-arrangement-seemore {
-    text-align: center;
-    width: 50%;
-    margin: 10rem auto 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 8rem;
-}
-
-.products-arrangement-seemore * {
-    width: fit-content;
-}
-
-.products-arrangement-seemore a {
-    margin-top: 5rem;
-    padding: 1em 2em;
-    border-radius: 1rem;
-    border: 2px solid var(--secondary-clr);
-}
-
-.products-arrangement-seemore a:hover {
-    background-color: var(--secondary-clr);
-    color: white;
-}
-
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-}
-   
-button.learn-more {
-    width: 12rem;
-    height: auto;
-}
-   
-button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: var(--thirdary-clr);
-    border-radius: 1.625rem;
-}
-   
-button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-}
-   
-button.learn-more .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-}
-   
-button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
-}
-   
-button.learn-more .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: var(--thirdary-clr);
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-}
-   
-button:hover .circle {
-    width: 100%;
-}
-   
-button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(1rem, 0);
-   }
-   
-button:hover .button-text {
-    color: #fff;
-}
-
-.reviews-container {
-    background-color: white;
-    padding-top: 5rem;
-}
-
-.reviews {
-    width: var(--max-width);
-    margin: 0 auto;
-}
-
-.reviews-container h1 {
-    font-size: var(--fs-1);
-    color: var(--secondary-clr);
-    font-weight: var(--fw-1);
-}
-
-.reviews span {
-    -webkit-text-stroke: 1px var(--secondary-clr);
-    color: transparent;
-}
-
-.review-cards {
-    display: flex;
-    margin-top: 4rem;
-    justify-content: space-between;
-}
-
-.review-card img {
-    border-radius: 3em;
-    background-color: rgb(250, 250, 250);
-    width: 50%;
-    height: 9rem;
-}
-
-.review-card {
-    background-color: rgb(239, 239, 239);
-    border-radius: 4rem;
-    height: 25rem;
-    width: 24%;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.product-img-and-desc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.the-review h5 {
-    font-size: var(--fs-5);
-    font-weight: var(--fw-1);
-    margin-bottom: 1rem;
-}
-
-.the-review h6 {
-    text-align: right;
-    font-size: var(--fs-6);
-    opacity: 0.4;
-    font-style: italic;
-    margin-top: 1em;
-}
-
-.reviews-arrow-menu {
-    margin: 0 auto;
-    width: fit-content;
-    margin-top: 4rem;
-    padding-bottom: 5rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.reviews-arrow-menu ion-icon {
-    font-size: var(--fs-2);
-    opacity: 0.5;
-}
-
-.product-promo {
-    background: linear-gradient(90deg, rgba(239,239,239,1) 50%, rgba(88,222,255,1) 50%);
-    height: 32rem;
-}
-
-.product-promo-centering {
-    width: var(--max-width);
-    margin: 0 auto;
-    display: flex;
-    height: 100%;
-}
-
-.product-description-etc {
-    margin-right: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 55%;
-    margin: auto;
-}
-
-.promo-hero, 
-.product-description-etc {
-    width: calc(var(--max-width) / 2);
-}
-
-.product-description-etc h1 {
-    font-size: 3rem;
-}
-
-.product-description-etc span {
-    color: var(--thirdary-clr);
-}
-
-.c-button {
-    width: 10rem;
-    color: #000;
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 0.9em 1.6em;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    z-index: 1;
-}
-   
-.c-button--gooey {
-    color: var(--thirdary-clr);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 4px solid var(--thirdary-clr);
-    border-radius: 0;
-    position: relative;
-    transition: all 700ms ease;
-}
-   
-.c-button--gooey .c-button__blobs {
-    height: 100%;
-    filter: url(#goo);
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: -3px;
-    right: -1px;
-    z-index: -1;
-}
-   
-.c-button--gooey .c-button__blobs div {
-    background-color: var(--thirdary-clr);
-    width: 34%;
-    height: 100%;
-    border-radius: 100%;
-    position: absolute;
-    transform: scale(1.4) translateY(125%) translateZ(0);
-    transition: all 700ms ease;
-}
-   
-.c-button--gooey .c-button__blobs div:nth-child(1) {
-    left: -5%;
-}
-   
-.c-button--gooey .c-button__blobs div:nth-child(2) {
-    left: 30%;
-    transition-delay: 60ms;
-}
-   
-.c-button--gooey .c-button__blobs div:nth-child(3) {
-    left: 66%;
-    transition-delay: 25ms;
-}
-   
-.c-button--gooey:hover {
-    color: #fff;
-}
-   
-.c-button--gooey:hover .c-button__blobs div {
-    transform: scale(1.4) translateY(0) translateZ(0);
-}
-
-.filler {
-    height: 10rem;
-    background-color: rgb(250, 250, 250);
-}
-
-.best-seller-product {
-    height: 40rem;
-    background: linear-gradient(90deg, rgba(250,250,250,1) 40%, rgb(239, 239, 239) 40%);
-}
-
-.best-seller-centering {
-    display: flex;
-    width: var(--max-width);
-    margin: 0 auto;
-    height: 100%;
-}
-
-.best-seller-centering img {
-    width: 50%;
-}
-
-.buy-product-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 60%;
-    margin: auto 0 auto 10rem;
-}
-
-.price-and-quantity {
-    gap: 5rem;
-    display: flex;
-}
-
-.price-and-quantity label {
-    display: none;
-    width: 0;
-}
-
-.star-reviews {
-    margin-bottom: 1.5rem;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-end;
-}
-
-.star-reviews a {
-    text-decoration: underline;
-}
-
-.stars {
-    display: flex;
-    color: rgb(255, 196, 60);
-}
-
-
-.addcart {
-    font-family: inherit;
-    font-size: 20px;
-    background: var(--thirdary-clr);
-    color: white;
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.2s;
-    width: 13rem;
-}
-   
-.addcart span {
-    display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
-}
-   
-.addcart ion-icon{
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
-}
-   
-.addcart:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
-}
-   
-.addcart:hover ion-icon {
-    transform: translateX(2em) rotate(5deg) scale(1.1);
-}
-   
-.addcart:hover span {
-    transform: translateX(8em);
-}
-   
-.addcart:active {
-    transform: scale(0.95);
-}
-   
-@keyframes fly-1 {
-    from {
-     transform: translateY(0.1em);
-    }
-   
-    to {
-     transform: translateY(-0.1em);
-    }
-}
-   
-.collection {
-    background-color: rgb(250, 250, 250);
-    height: 65rem;
-}
-   
-.collection-container {
-    width: var(--max-width);
-    margin: 0 auto;
-    height: 100%;
-}
-
-.collection-container h1 {
-    font-size: var(--fs-1);
-    color: var(--secondary-clr);
-    margin-bottom: 3rem;
-}
-
-.collection-container span {
-    -webkit-text-stroke: 1px var(--secondary-clr);
-    color: transparent;
-}
-
-.collection-arrangement {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 0.8fr 0.8fr 0.6fr 0.6fr;
-    gap: 1rem;
-    height: 70%;
-}
-
-.collection-arrangement a,
-.collection-arrangement img {
-    border-radius: 2rem;
-    border: 2px solid brown;
-}
-
-.collection-arrangement :first-child {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.collection-arrangement :nth-child(6) {
-    grid-row: span 2;
-}
-
-.collection-arrangement :is(:nth-child(8), :nth-child(9), :nth-child(10), :nth-child(11)) {
-    grid-row: span 2;
-}
-
-.collection-arrangement :nth-child(4) {
-    background-color: var(--primary-clr);
-}
-
-.collection-arrangement :nth-child(5) {
-    background-color: var(--thirdary-clr);
-}
-
-.collection-arrangement :nth-child(9) {
-    background-color: bisque;
-}
-
-.collection-arrangement :nth-child(11) {
-    background-color: var(--secondary-clr);
-}
-
-.blogs {
-    background-color: rgb(239, 239, 239);
-}
-
-.blogs-container {
-    width: var(--max-width);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-shrink: 1;
-    flex-basis: 100%;
-    gap: 2rem;
-    height: 20rem;
-}
-
-.our-blogs-text h2 {
-    font-size: var(--fs-3);
-    margin-bottom: 1rem;
-}
-
-.our-blogs-text p {
-    opacity: 0.7;
-}
-
-.our-blogs-text button {
-    margin-top: 3rem;
-}
-
-.blogs-container img {
-    width: 100%;
-    height: 10rem;
-    background-color: white;
-    border-radius: 1.5rem;
-}
-
-.blog-card h6 {
-    opacity: 0.5;
-}
-
-footer {
-    background-color: var(--secondary-clr);
-    color: rgba(239,239,239,1);
-}
-
-footer a {
-    text-decoration: underline;
-    color: rgb(239, 239, 239);
-}
-
-footer a, 
-footer p {
-    opacity: 0.8;
-}
-
-.footer-container {
-    width: var(--max-width);
-    padding-top: 5rem;
-    margin: 0 auto;
-}
-
-.footer-stuff {
-    display: flex;
-    justify-content: space-between;
-}
-
-.el-1 {
-    width: 25%;
-}
-
-.el-2 {
-    width: 40%;
-    text-align: center;
-}
-
-.el-3 {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
-
-.footer-container h4 {
-    font-size: var(--fs-4);
-    margin-bottom: 0.5em;
-}
-
-.other-stuff {
-    margin: 0 auto;
-    width: fit-content;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.other-stuff span {
-    color: transparent;
-    -webkit-text-stroke: 0.4px white;
-}
-
-.other-stuff h3 {
-    font-size: var(--fs-5);
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-footer h5 {
-    padding-bottom: 2rem;
-}
-
-.payments {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.fs {
-    width: 3rem;
-    height: 2rem;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.input-wrapper input {
-    background-color: #eee;
-    border: none;
-    padding: 1rem;
-    font-size: 1rem;
-    width: 13em;
-    border-radius: 1rem;
-    color: lightcoral;
-    cursor: pointer;
-}
-   
-.input-wrapper input:focus {
-    outline-color: var(--thirdary-clr);
-}
-
-.subscribe {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.sub-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 38px;
-    border-radius: 16px;
-    border: 1px solid transparent;
-    color: #FFFFFF;
-    background-color: var(--thirdary-clr);
-    font-size: 16px;
-    letter-spacing: 1px;
-    transition: all 0.15s linear;
-    width: 13rem;
-    height: 3.5rem;
-}
-
-.sub-btn ion-icon {
-    margin-right: 1rem;
-}
-
-.sub-btn:hover {
-    background-color: rgba(29, 201, 160, 0.08);
-    border-color: var(--thirdary-clr);
-    color: var(--thirdary-clr);
-    transform: translateY(-5px) scale(1.05);
-   }
-   
-.sub-btn:active {
-    background-color: transparent;
-    border-color: var(--thirdary-clr);
-    color: var(--thirdary-clr);
-    transform: translateY(5px) scale(0.95);
-}
-   
-.sub-btn:disabled {
-    background-color: rgba(255, 255, 255, 0.16);
-    color: #8E8E93;
-    border-color: #8E8E93;
-}
-
-.readmoreee {
-    --primary-color: var(--thirdary-clr);
-    --secondary-color: #fff;
-    --hover-color: var(--thirdary-clr);
-    --arrow-width: 10px;
-    --arrow-stroke: 2px;
-    box-sizing: border-box;
-    border: 0;
-    border-radius: 10px;
-    color: var(--secondary-color);
-    padding: 1em 1.8em;
-    background: var(--primary-color);
-    display: flex;
-    transition: 0.2s background;
-    align-items: center;
-    gap: 0.6em;
-    font-weight: bold;
-}
-  
-.readmoreee .arrow-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.readmoreee .arrow {
-    margin-top: 1px;
-    width: var(--arrow-width);
-    background: var(--primary-color);
-    height: var(--arrow-stroke);
-    position: relative;
-    transition: 0.2s;
-}
-  
-.readmoreee .arrow::before {
-    content: "";
-    box-sizing: border-box;
-    position: absolute;
-    border: solid var(--secondary-color);
-    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-    display: inline-block;
-    top: -3px;
-    right: 3px;
-    transition: 0.2s;
-    padding: 3px;
-    transform: rotate(-45deg);
-}
-  
-.readmoreee:hover {
-    background-color: var(--hover-color);
-}
-  
-.readmoreee:hover .arrow {
-    background: var(--secondary-color);
-}
-  
-.readmoreee:hover .arrow:before {
-    right: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chrystam - Photographer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="xryst-2-main-style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="top">
+            <div class="xryst-header-container" id="nav">
+                <a href="#top" class="logo"><span class="primary-color">CHRY</span><span class="logo-s">S</span>TAM</a>
+                <nav class="xryst-nav">
+                    <a href="#about">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#footer">Contact me</a>
+                </nav>
+                <label class="popup-menu-button" for="menu-menu"><ion-icon name="menu"></ion-icon></label>
+            </div>
+            <input type="checkbox" id="menu-menu">
+            <nav class="popup-menu">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#footer">Contact me</a>
+            </nav>
+        </header>
+        <main>
+            <section class="xryst-hero" id="hero">
+                <div class="hero-layout">
+                    <img src="images/hero-img.jpg" alt="Chrystam taking a photo">
+                    <div class="title-and-intro">
+                        <h1><span class="primary-color">Photography</span><br>helps people to see</h1>
+                        <p>From inspiring people's stories to impactful messages, I create head-turning     photograph that does the right thing in the right place, at the right time to   unlock the possibility.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="hero-about-mid-overlay">
+                <div class="overlay">
+                    <ion-icon name="ribbon"></ion-icon>
+                </div>
+            </section>
+            <section class="xryst-about" id="about">
+                <div class="about-layout">
+                    <img src="images/hero-2-img.jpg" alt="Chrystam-standing">
+                    <div class="title-and-about">
+                        <h2>About <span class="primary-color">Chrystam</span></h2>
+                        <p>Photographer and creator based in Athens, Greece. Being perceptive to the small details of the everyday, my work revolves around floating moments and allegorical scenes. Nature, memory, and family are notions that interest me in a symbolic form and their narrative power.</p>
+                        <p>Moreoverm my humanist approach and idealisation of women set me apart from the other photographers, as my privilefes are the soul and the personality.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="xryst-gallery" id="gallery">
+                <h2>Gallery</h2>
+                <div class="center-gallery">
+                    <div class="gallery-layout">
+                        <img class="cols-2" src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img class="rows-2" src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img class="rows-cols-2" src="images/car.jpg">
+                        <img src="">
+                        <img src="">
+                        <img class="rows-2" src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                        <img class="cols-2" src="">
+                    </div>
+                </div>
+            </section>
+            <aside class="socials">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <span class="socials-banner">FOLLOW ME</span>
+            </aside>
+            <aside>
+                <nav class="socials-menu"> 
+                    <a class="fb" href="#"><ion-icon name="logo-facebook"></ion-icon></a> 
+                    <a class="insta" target="_blank" href="#"><ion-icon name="logo-instagram"></ion-icon></a> 
+                    <a class="linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a> 
+                    <a class="git" href="#"><ion-icon name="logo-github"></ion-icon></a> 
+                    <a class="skype" href="#"><ion-icon name="logo-skype"></ion-icon></a> 
+                </nav>
+            </aside>
+            <aside class="totop">
+                <a href="#top"><ion-icon name="chevron-up-outline"></ion-icon></a>
+            </aside>
+        </main>
+        <footer class="xryst-footer" id="footer">
+            <div class="footer-content">
+                <h3>Contact me</h3>
+                <div class="xryst-contact-info">
+                    <p>Feel free to contact me anytime at<br><strong>chrystam@gmail.com ,</strong><br>I am usually available on weekends and that's when I will be responding most of the time</p>
+                </div>
+            </div>
+            <div class="made-by">
+                <span>Made by <strong>Jerry Apples</strong></span>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
