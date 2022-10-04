@@ -20,5 +20,5 @@ function hidePopUpMenu() {
 }
 
 for (i=0; i < popUpMenuOptions.length; i++) {
-    popUpMenuOptions[i].addEventListener('click', hidePopUpMenu);
+    popUpMenuOptions[i].addEventListener('click', openPopUpMenu);
 }
