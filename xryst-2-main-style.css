@@ -579,3 +579,7 @@ header {
 header, .popup-menu {
     z-index: 99999;
 }
+
+.overlay {
+    z-index: 1;
+}
