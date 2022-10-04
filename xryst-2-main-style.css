@@ -572,6 +572,6 @@ div#nav-icon4 {
 
 
 header {
-    position: sticky;
+    position: sticky !important;
     top: 0;
 }
