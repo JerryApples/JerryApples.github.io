@@ -360,7 +360,7 @@ img {
     }
 
     .popup-menu-button {
-        display: none;
+        display: none !important;
     }
 
     .title-and-intro p {
