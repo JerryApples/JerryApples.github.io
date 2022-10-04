@@ -356,7 +356,7 @@ img {
 
 @media (min-width: 1450px) {
     :root {
-        --page-width: 1350px;
+        --page-width: 1450px;
     }
 
     .popup-menu-button {
