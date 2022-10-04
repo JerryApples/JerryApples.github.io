@@ -581,5 +581,5 @@ header, .popup-menu {
 }
 
 .overlay {
-    z-index: 1;
+    z-index: 1 !important;
 }
