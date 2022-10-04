@@ -3,6 +3,7 @@ const popUpMenu = document.querySelector('.popup-menu');
 const popUpMenuOptions = document.getElementsByClassName('popup-a');
 
 function openPopupMenu() {
+    document.querySelector('#nav-icon4').classList.toggle('open');
     if (popUpMenu.classList.contains('open-popup')) {
         popUpMenu.classList.remove('open-popup');
     }
