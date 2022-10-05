@@ -43,6 +43,7 @@ function openContactForm() {
     if (contForm1.style.transform = 'translateY(-90vh)') {
         contForm1.style.transform = 'translateY(0)';
         contForm2.style.transform = 'translateY(0)';
+        contCont.style.display = 'flex';
     }
 }
 
