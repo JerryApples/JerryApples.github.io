@@ -427,7 +427,7 @@ button:active .button-text {
 
 .contact-form-container {
     max-width: 680px;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
 }
 
