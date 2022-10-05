@@ -5,6 +5,10 @@ const seemoreButton = document.querySelector('.seemore');
 const galleryLayout = document.querySelector('.gallery-layout');
 const buttonText = document.querySelector('.button-text');
 const buttonArrow = document.querySelector('.arrow');
+const contact = document.querySelector('.contact');
+const contForm1 = document.querySelector('.contact-form-1');
+const contForm2 = document.querySelector('.contact-form-2');
+const contCont = document.querySelector('.contact-form-container')
 
 function openPopupMenu() {
     document.querySelector('#nav-icon4').classList.toggle('open');
@@ -13,7 +17,6 @@ function openPopupMenu() {
     }
     else {
         popUpMenu.classList.add('open-popup');
-        querySelector(body).style.overflow = 'hidden';
     }
 };
 
@@ -35,3 +38,13 @@ function openGallery() {
 }
 
 seemoreButton.addEventListener('click', openGallery);
+
+function openContactForm() {
+    if (contForm1.style.transform = 'translateY(-90vh)') {
+        contForm1.style.transform = 'translateY(0)';
+        contForm2.style.transform = 'translateY(0)';
+    }
+}
+
+contact.addEventListener('click', openContactForm); 
+
