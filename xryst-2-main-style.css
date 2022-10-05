@@ -401,16 +401,16 @@ button.seemore .button-text {
     text-transform: uppercase;
 }
    
-button:hover .circle {
+button:active .circle {
     width: 100%;
 }
    
-button:hover .circle .icon.arrow {
+button:active .circle .icon.arrow {
     background: var(--bg-color-1);
     transform: translate(1rem, 0);
 }
    
-button:hover .button-text {
+button:active .button-text {
     color: var(--bg-color-1);
 }
 
