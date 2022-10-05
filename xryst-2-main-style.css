@@ -4,7 +4,7 @@
     text-decoration: none;
     font-family: Overpass, sans-serif;
     color: var(--text-color);
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -321,7 +321,7 @@ img {
 }
 
 .seemore-container {
-    display: flex;
+    display: none;
     justify-content: center;
     margin-bottom: 3rem;
 }
