@@ -218,6 +218,7 @@ img {
     overflow: hidden;
     height: 37rem;
     margin-bottom: 3rem;
+    transition: 0.8s;
 }
 
 .gallery-layout img {
