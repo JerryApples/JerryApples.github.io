@@ -1,10 +1,10 @@
-    * {
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: Overpass, sans-serif;
     color: var(--text-color);
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 :root {
@@ -321,12 +321,12 @@ img {
 }
 
 .seemore-container {
-    display: none;
+    display: flex;
     justify-content: center;
     margin-bottom: 3rem;
 }
 
-button {
+button.seemore {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -401,16 +401,16 @@ button.seemore .button-text {
     text-transform: uppercase;
 }
    
-button:active .circle {
+button.seemore:active .circle {
     width: 100%;
 }
    
-button:active .circle .icon.arrow {
+button.seemore:active .circle .icon.arrow {
     background: var(--bg-color-1);
     transform: translate(1rem, 0);
 }
    
-button:active .button-text {
+button.seemore:active .button-text {
     color: var(--bg-color-1);
 }
 
@@ -429,6 +429,7 @@ button:active .button-text {
     max-width: 680px;
     display: none;
     flex-wrap: wrap;
+    z-index: 4;
 }
 
 .contact-form-1,
@@ -442,10 +443,11 @@ button:active .button-text {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.6px);
     -webkit-backdrop-filter: blur(5.6px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: none;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     transition: 1s;
+    z-index: 4;
 }
 
 .contact-form-2 {
@@ -453,6 +455,7 @@ button:active .button-text {
     background-color: var(--bg-color-2);
     border-radius: 20px;
     transition: 1s;
+    z-index: 4;
 }
 
 .contact-form-2 form {
@@ -461,6 +464,10 @@ button:active .button-text {
     gap: 1.2rem;
     margin: 1rem 1.5rem 0 1.5rem;
     margin-bottom: 3rem;
+}
+
+.open-contact-form {
+    transform: translateY(0);
 }
 
 .contact-form-container h3 {
@@ -589,7 +596,7 @@ form button {
     transition: all 0.2s;
 }
    
-button span {
+form button span {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
@@ -599,25 +606,25 @@ path {
     color: rgb(219, 219, 219) !important;
 }
 
-button svg {
+form button svg {
     display: block;
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
 }
    
-button:hover .svg-wrapper {
+form button:hover .svg-wrapper {
     animation: fly-1 0.6s ease-in-out infinite alternate;
 }
    
-button:hover svg {
+form button:hover svg {
     transform: translateX(2.2em) rotate(45deg) scale(1.1);
 }
    
-button:hover span {
+form button:hover span {
     transform: translateX(6em);
 }
    
-button:active {
+form button:active {
     transform: scale(0.95);
 }
    
@@ -740,6 +747,7 @@ button:active {
         height: 70vh;
         width: 330px;
         display: block;
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .contact-form-2 {
