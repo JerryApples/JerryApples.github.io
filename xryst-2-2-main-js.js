@@ -9,6 +9,13 @@ const contact = document.querySelector('.contact');
 const contForm1 = document.querySelector('.contact-form-1');
 const contForm2 = document.querySelector('.contact-form-2');
 const contCont = document.querySelector('.contact-form-container')
+const contSection = document.querySelector('.contact-form');
+const contForm = document.querySelector('.contact-form-bg');
+const header = document.querySelector('header');
+const section1 = document.querySelector('.xryst-about');
+const section2 = document.querySelector('.xryst-gallery');
+const section3 = document.querySelector('footer');
+const re = document.querySelectorAll('re');
 
 function openPopupMenu() {
     document.querySelector('#nav-icon4').classList.toggle('open');
@@ -40,12 +47,27 @@ function openGallery() {
 seemoreButton.addEventListener('click', openGallery);
 
 function openContactForm() {
-    if (contForm1.style.transform = 'translateY(-90vh)') {
-        contForm1.style.transform = 'translateY(0)';
-        contForm2.style.transform = 'translateY(0)';
-        contCont.style.display = 'flex';
+    if (contForm1.classList.contains('open-contact-form')) {
+        contCont.style.display = 'none';
+        contForm1.classList.remove('open-contact-form');
+        contForm2.classList.remove('open-contact-form');
     }
+    else {
+        contCont.style.display = 'flex';
+        contForm1.classList.add('open-contact-form');
+        contForm2.classList.add('open-contact-form');
+    }
+}
+
+function closeForm() {
+    contForm1.classList.remove('open-contact-form');
+    contForm2.classList.remove('open-contact-form');
+    contCont.style.display = 'none';
 }
 
 contact.addEventListener('click', openContactForm); 
 
+header.addEventListener('click', closeForm);
+section1.addEventListener('click', closeForm);
+section2.addEventListener('click', closeForm);
+re.addEventListener('click', closeForm);
