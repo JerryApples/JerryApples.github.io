@@ -16,6 +16,7 @@ const section1 = document.querySelector('.xryst-about');
 const section2 = document.querySelector('.xryst-gallery');
 const section3 = document.querySelector('.xryst-hero');
 const closeButton = document.querySelector('.x');
+const sendMessage = document.querySelector('.msg');
 
 function openPopupMenu() {
     document.querySelector('#nav-icon4').classList.toggle('open');
@@ -71,3 +72,5 @@ header.addEventListener('click', closeForm);
 section1.addEventListener('click', closeForm);
 section2.addEventListener('click', closeForm);
 closeButton.addEventListener('click', closeForm);
+
+sendMessage.addEventListener('click', openContactForm);
