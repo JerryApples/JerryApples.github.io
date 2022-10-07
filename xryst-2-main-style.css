@@ -1029,3 +1029,64 @@ header, .popup-menu {
 .overlay {
     z-index: 1 !important;
 }
+
+.msg {
+  --secondary-color: #fff;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 10px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--bg-color-1);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  font-size: var(--fs-5);
+}
+
+.msg .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--bg-color-1);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.msg .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.msg:hover {
+  background-color: var(--primary-color);
+}
+
+.msg:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.msg:hover .arrow:before {
+  right: 0;
+}
