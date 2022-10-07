@@ -222,8 +222,10 @@ img {
 .gallery-layout .img-container {
     height: 10rem;
     width: 10rem;
+    display: flex;
+    align-items: center;
     margin-bottom: 0;
-    background-color: white;
+    background-color: black
 }
 
 .xryst-footer {
@@ -400,16 +402,16 @@ button.seemore .button-text {
     text-transform: uppercase;
 }
    
-button.seemore:active .circle {
+button.seemore:hover .circle {
     width: 100%;
 }
    
-button.seemore:active .circle .icon.arrow {
+button.seemore:hover .circle .icon.arrow {
     background: var(--bg-color-1);
     transform: translate(1rem, 0);
 }
    
-button.seemore:active .button-text {
+button.seemore:hover .button-text {
     color: var(--bg-color-1);
 }
 
@@ -713,6 +715,33 @@ form button:active {
 
 .img-container {
     border-radius: 0;
+}
+
+.x {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    border: none;
+    color: black;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-3);
+}
+
+.x ion-icon {
+    font-size: inherit;
+    height: inherit;
+    width: var(--fs-3);
+    color: inherit;
+}
+
+.x:hover {
+    color: white;
+    background-color: black;
 }
 
 @media (min-width: 550px) {
