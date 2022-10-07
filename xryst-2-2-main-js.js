@@ -14,8 +14,8 @@ const contForm = document.querySelector('.contact-form-bg');
 const header = document.querySelector('header');
 const section1 = document.querySelector('.xryst-about');
 const section2 = document.querySelector('.xryst-gallery');
-const section3 = document.querySelector('footer');
-const re = document.querySelectorAll('re');
+const section3 = document.querySelector('.xryst-hero');
+const closeButton = document.querySelector('.x');
 
 function openPopupMenu() {
     document.querySelector('#nav-icon4').classList.toggle('open');
@@ -70,4 +70,4 @@ contact.addEventListener('click', openContactForm);
 header.addEventListener('click', closeForm);
 section1.addEventListener('click', closeForm);
 section2.addEventListener('click', closeForm);
-re.addEventListener('click', closeForm);
+closeButton.addEventListener('click', closeForm);
