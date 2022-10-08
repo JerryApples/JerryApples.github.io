@@ -17,6 +17,11 @@ const section2 = document.querySelector('.xryst-gallery');
 const section3 = document.querySelector('.xryst-hero');
 const closeButton = document.querySelector('.x');
 const sendMessage = document.querySelector('.msg');
+const viewer = document.querySelector('.img-viewer');
+const galleryImgs = document.querySelectorAll('.gall-img');
+const buttonRight = document.querySelector('.right-button');
+const buttonLeft = document.querySelector('.left-button');
+const imgCont = document.querySelector('.img-viewer-img-container-inner');
 
 function openPopupMenu() {
     document.querySelector('#nav-icon4').classList.toggle('open');
@@ -74,3 +79,162 @@ section2.addEventListener('click', closeForm);
 closeButton.addEventListener('click', closeForm);
 
 sendMessage.addEventListener('click', openContactForm);
+
+function openImgViewer() {
+    if (viewer.style.display === 'flex') {
+        viewer.style.display = "none";
+    }
+    else {
+        viewer.style.display = 'flex';
+        imgCont.style.marginLeft = '700vw';
+    }
+};
+
+function openImgViewerForEachImg() {
+    for (let i = 0; i < galleryImgs.length; i++) {
+        galleryImgs[i].addEventListener('click', openImgViewer);     
+    }
+};
+
+openImgViewerForEachImg();
+
+document.querySelector('.close-viewer').addEventListener('click', openImgViewer);
+
+function imgContButtonMoveRight() {
+    switch (imgCont.style.marginLeft) {
+        case '700vw':
+            imgCont.style.marginLeft = '630vw';
+            break;
+        case '630vw':
+            imgCont.style.marginLeft = '560vw';
+            break;
+        case '560vw':
+            imgCont.style.marginLeft = '490vw';
+            break;
+        case '490vw':
+            imgCont.style.marginLeft = '420vw';
+            break;
+        case '420vw':
+            imgCont.style.marginLeft = '350vw';
+            break;
+        case '350vw':
+            imgCont.style.marginLeft = '280vw';
+            break;
+        case '280vw':
+            imgCont.style.marginLeft = '210vw';
+            break;
+        case '210vw':
+            imgCont.style.marginLeft = '140vw';
+            break;
+        case '140vw':
+            imgCont.style.marginLeft = '70vw';
+            break;
+        case '70vw':
+            imgCont.style.marginLeft = '0vw';
+            break;
+        case '0vw':
+            imgCont.style.marginLeft = '-70vw';
+            break;
+        case '-70vw':
+            imgCont.style.marginLeft = '-140vw';
+            break;
+        case '-140vw':
+            imgCont.style.marginLeft = '-210vw';
+            break;
+        case '-210vw':
+            imgCont.style.marginLeft = '-280vw';
+            break;
+        case '-280vw':
+            imgCont.style.marginLeft = '-350vw';
+            break;
+        case '-350vw':
+            imgCont.style.marginLeft = '-420vw';
+            break;
+        case '-420vw':
+            imgCont.style.marginLeft = '-490vw';
+            break;
+        case '-490vw':
+            imgCont.style.marginLeft = '-560vw';
+            break;
+        case '-560vw':
+            imgCont.style.marginLeft = '-630vw';
+            break;
+        case '-630vw':
+            imgCont.style.marginLeft = '-700vw';
+            break;
+        case '-700vw':
+            imgCont.style.marginLeft = '-700vw';
+            break;
+    }
+}
+
+function imgContButtonMoveLeft() {
+    switch (imgCont.style.marginLeft) {
+        case '-700vw':
+            imgCont.style.marginLeft = '-630vw';
+            break;
+        case '-630vw':
+            imgCont.style.marginLeft = '-560vw';
+            break;
+        case '-560vw':
+            imgCont.style.marginLeft = '-490vw';
+            break;
+        case '-490vw':
+            imgCont.style.marginLeft = '-420vw';
+            break;
+        case '-420vw':
+            imgCont.style.marginLeft = '-350vw';
+            break;
+        case '-350vw':
+            imgCont.style.marginLeft = '-280vw';
+            break;
+        case '-280vw':
+            imgCont.style.marginLeft = '-210vw';
+            break;
+        case '-210vw':
+            imgCont.style.marginLeft = '-140vw';
+            break;
+        case '-140vw':
+            imgCont.style.marginLeft = '-70vw';
+            break;
+        case '-70vw':
+            imgCont.style.marginLeft = '0vw';
+            break;
+        case '0vw':
+            imgCont.style.marginLeft = '70vw';
+            break;
+        case '70vw':
+            imgCont.style.marginLeft = '140vw';
+            break;
+        case '140vw':
+            imgCont.style.marginLeft = '210vw';
+            break;
+        case '210vw':
+            imgCont.style.marginLeft = '280vw';
+            break;
+        case '280vw':
+            imgCont.style.marginLeft = '350vw';
+            break;
+        case '350vw':
+            imgCont.style.marginLeft = '420vw';
+            break;
+        case '420vw':
+            imgCont.style.marginLeft = '490vw';
+            break;
+        case '490vw':
+            imgCont.style.marginLeft = '560vw';
+            break;
+        case '560vw':
+            imgCont.style.marginLeft = '630vw';
+            break;
+        case '630vw':
+            imgCont.style.marginLeft = '700vw';
+            break;
+        case '700vw':
+            imgCont.style.marginLeft = '700vw';
+            break;
+    }
+}
+
+buttonRight.addEventListener('click', imgContButtonMoveRight);
+buttonLeft.addEventListener('click', imgContButtonMoveLeft);
