@@ -788,8 +788,9 @@ form button:active {
 }
 
 .img-viewer-img-container img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    box-shadow:  none;
 }
 
 .img-viewer-buttons {
@@ -855,6 +856,12 @@ form button:active {
     :root {
         --fs-1: 5.5rem;
     }
+
+    .img-viewer-img-container img {
+        width: auto;
+        height: 100%;
+    }
+
 }
 
 @media (min-width: 880px) {
