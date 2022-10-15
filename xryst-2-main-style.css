@@ -281,7 +281,6 @@ img {
 }
 
 .socials-menu > * { 
-    border: 2px solid white; 
     height: var(--fs-3); 
     font-size: var(--fs-3); 
     padding: 0.5rem; 
