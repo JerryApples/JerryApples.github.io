@@ -2,6 +2,18 @@ const addButton  = document.querySelector('.button-add');
 const taskList   = document.querySelector('.task-list');
 const input = document.getElementById('taskInput');
 
+function changeStatus(event) {
+    const statusElement = event.currentTarget;
+    if (statusElement.classList.contains('status-pending')) {
+        statusElement.classList.replace('status-pending', 'status-complete');
+        statusElement.textContent = "complete";
+    }
+    else  {
+        statusElement.classList.replace('status-complete', 'status-pending');
+        statusElement.textContent = "pending";
+    }
+}
+
 function createTaskElement(taskText) {
     const li  = document.createElement("li");
     li.className = "task-row";
@@ -12,7 +24,7 @@ function createTaskElement(taskText) {
 
     const divStatus = document.createElement("div");
     const spanStatus = document.createElement("span");
-    spanStatus.className = "pend-down";
+    spanStatus.className = "status-pending";
     spanStatus.textContent = "pending";
     divStatus.appendChild(spanStatus);
     li.appendChild(divStatus);
@@ -28,6 +40,8 @@ function createTaskElement(taskText) {
         li.classList.add('deleting');
         setTimeout( () => li.remove(), 500);
     });
+
+    spanStatus.addEventListener('click', changeStatus);
 
     return li;
 }
@@ -48,3 +62,4 @@ input.addEventListener('keypress', (e) => {
 });
 
 addButton.addEventListener('click', addTask);
+
