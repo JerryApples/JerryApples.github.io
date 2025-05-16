@@ -230,7 +230,15 @@ ion-icon:hover {
     color: red;
 }
 
-.pend-down {
+.status-pending {
+    background-color: rgb(209, 169, 39);
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.status-complete {
     background-color: rgb(127, 212, 127);
     width: fit-content;
     height: fit-content;
