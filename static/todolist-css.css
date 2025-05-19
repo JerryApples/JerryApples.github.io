@@ -64,8 +64,8 @@ header {
     height: 21vh;
     width: 40vw;
     margin-top: 5rem;
-    border-top-left-radius: 6rem;
-    border-top-right-radius: 6rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
