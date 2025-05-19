@@ -259,3 +259,14 @@ ion-icon:hover {
         width: 80vw;
     }
 }
+
+@media (max-width: 450px) {
+    :root {
+        --fs-1: 2.5rem;
+    }
+
+    .input {
+        width: 90%;
+        font-size: var(--fs-4);
+    }
+}
